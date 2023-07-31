@@ -13,16 +13,15 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <div className="flex justify-between ml-10 items-center lg:h-16">
-      <div>Coding Vets</div>
+      <Link href={"/"}>Coding Vets</Link>
       <div className="lg:flex gap-24 mr-10 hidden lg:items-center">
-        <div>Home</div>
-        <div>Course Info</div>
-        <div>Our Story</div>
-        <div>Rules</div>
-        <div>Contact</div>
-        <div>
+        <Link href={"/Course-Info"}>Course Info</Link>
+        <Link href={"/Our-Story"}>Our Story</Link>
+        <Link href={"/Rules"}>Rules</Link>
+        <Link href={"/Contact"}>Contact</Link>
+        <Link href={"/Donate"}>
           <Button1 buttonText="Donate" padding="p-2" />
-        </div>
+        </Link>
       </div>
       <div className=" lg:hidden ml-6 p-4">
         <Menu isLazy id="navbar-menu">
@@ -35,13 +34,20 @@ const Navbar = () => {
             borderColor={"green.400"}
           />
           <MenuList bgColor={"black"}>
-            <Link href="/">
-              <MenuItem bgColor={"black"}>Home</MenuItem>
+            <Link href={"/Course-Info"}>
               <MenuItem bgColor={"black"}>Course Info</MenuItem>
+            </Link>
+            <Link href={"/Our-Story"}>
               <MenuItem bgColor={"black"}>Our Story</MenuItem>
+            </Link>
+            <Link href={"/Rules"}>
               <MenuItem bgColor={"black"}>Rules</MenuItem>
+            </Link>
+            <Link href={"/Contact"}>
               <MenuItem bgColor={"black"}>Contact</MenuItem>
-              <MenuItem bgColor={"black"} borderColor="green" borderWidth={1}>
+            </Link>
+            <Link href={"/Donate"}>
+              <MenuItem bgColor={"black"} textColor={"green.300"}>
                 Donate
               </MenuItem>
             </Link>
