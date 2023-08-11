@@ -15,6 +15,7 @@ const Navbar = () => {
     <div className="flex justify-between ml-10 items-center lg:h-16">
       <Link href={"/"}>Coding Vets</Link>
       <div className="lg:flex gap-24 mr-10 hidden lg:items-center">
+        <Link href={"/Apply"}>Apply</Link>
         <Link href={"/Course-Info"}>Course Info</Link>
         <Link href={"/Our-Story"}>Our Story</Link>
         <Link href={"/Rules"}>Rules</Link>
@@ -34,6 +35,9 @@ const Navbar = () => {
             borderColor={"green.400"}
           />
           <MenuList bgColor={"black"}>
+            <Link href={"/Apply"}>
+              <MenuItem bgColor={"black"}>Apply</MenuItem>
+            </Link>
             <Link href={"/Course-Info"}>
               <MenuItem bgColor={"black"}>Course Info</MenuItem>
             </Link>

@@ -3,7 +3,7 @@ import React from "react";
 const Cards = () => {
   return (
     <div className=" mt-20 lg:mt-24 text-lg text-slate-300">
-      <header className="text-center font-semibold text-4xl mt-1">
+      <header className="text-center font-semibold text-4xl mt-1 text-white">
         Coding Vets Curriculum
       </header>
       <header className="text-center mt-6 text-xl">
